@@ -14,8 +14,6 @@ public class DataSource {
 	
 	private ObservableList<User> users = FXCollections.observableArrayList();
 	
-	
-
 	public DataSource() {
 		
 		users.add(new User("8ior","Ndeve","ndeye.diorMgmail.com","775231245", Role.SIMPLE_USER));

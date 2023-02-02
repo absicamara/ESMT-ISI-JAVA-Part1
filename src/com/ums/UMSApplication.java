@@ -13,6 +13,7 @@ public class UMSApplication extends Application {
 	private Stage primaryStage;
 	private BorderPane mainUI;
 	private AnchorPane userUI;
+	private AnchorPane createUserUI;
 	
 	
 
@@ -42,8 +43,18 @@ public class UMSApplication extends Application {
 		try {
 			// Load userUI
 			userUI = (AnchorPane) FXMLLoader.load(getClass().getResource("ui/UserUI.fxml"));
-			// Set userUI into the center of root layout.
+			// Set userUI into the center of root layout
 			mainUI.setCenter(userUI);
+			} catch (IOException e) { e.printStackTrace(); }
+	}
+	
+	
+	public void showCreateUserUI() {
+		try {
+			// Load userUI
+			createUserUI = (AnchorPane) FXMLLoader.load(getClass().getResource("ui/CreateUserUI.fxml"));
+			// Set userUI into the center of root layout
+			mainUI.setCenter(createUserUI);
 			} catch (IOException e) { e.printStackTrace(); }
 		
 	}
