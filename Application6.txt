@@ -1,1 +1,0 @@
-Implémenter et tester la fabrique entity.factory.PersonneFactory permettant d’instancier les différents types de personnes (responsable, formateur, étudiant)
