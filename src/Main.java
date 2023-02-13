@@ -3,28 +3,23 @@ import entity.Etudiant;
 public class Main {
 
     public static void main(String[] args) {
-        testException();
-        testRuntimeException();
+        testException2();
     }
 
-    public static void testRuntimeException() {
-        Etudiant etudiant = new Etudiant("CAMARA", "", 'M',  5555, "MP-ISI");
+    public static void testException2() {
         try {
-            etudiant.setAge(2);
+            testException1();
         } catch (Exception e) {
-            e.printStackTrace();
+
             System.err.println(e.getMessage());
         }
-
-        etudiant.sePresenter();
     }
 
-    public static void testException() {
-        try {
-            Etudiant etudiant = new Etudiant("Diallo", "Alimatou", 'M', -5, 972, "ISI");
-            etudiant.sePresenter();
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
+    public static void testException1() throws  Exception{
+
+            Etudiant etudiant = new Etudiant();
+            etudiant.setAge(-5);
+
+
     }
 }
