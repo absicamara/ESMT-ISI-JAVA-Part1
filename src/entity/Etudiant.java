@@ -1,13 +1,19 @@
 package entity;
 
 public class Etudiant extends Personne{
-    private int matricule;
-    private String formation;
+    protected int matricule;
+    protected String formation;
 
     public Etudiant() {
     }
 
-    public Etudiant(String nom, String prenom, char sexe, int age, int matricule, String formation) {
+    public Etudiant(String nom, String prenom, char sexe, int matricule, String formation) {
+        super(nom, prenom, sexe);
+        this.matricule = matricule;
+        this.formation = formation;
+    }
+
+    public Etudiant(String nom, String prenom, char sexe, int age, int matricule, String formation) throws Exception {
         super(nom, prenom, sexe, age);
         this.matricule = matricule;
         this.formation = formation;
@@ -32,6 +38,6 @@ public class Etudiant extends Personne{
     @Override
     public void sePresenter() {
         super.sePresenter();
-        System.out.println("Mon matricule est le "+matricule+ " et je inscrit en : "+formation);
+        System.out.println("Mon numero matricule est "+matricule+ " et je suis la formation : "+formation);
     }
 }

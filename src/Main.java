@@ -1,27 +1,30 @@
 import entity.Etudiant;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
+
     public static void main(String[] args) {
-            List<Etudiant> etudiants = new ArrayList<Etudiant>();
+        testException();
+        testRuntimeException();
+    }
 
-        etudiants.add(new Etudiant("CAMARA", "Sidiki", 'M', 35, 3, "ISI"));
-        etudiants.add(new Etudiant("Diallo", "Binta", 'F', 65, 33, "SSI"));
+    public static void testRuntimeException() {
+        Etudiant etudiant = new Etudiant("CAMARA", "", 'M',  5555, "MP-ISI");
+        try {
+            etudiant.setAge(2);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println(e.getMessage());
+        }
 
+        etudiant.sePresenter();
+    }
 
-            try {
-
-                System.out.println(etudiants.get(0).getPrenom());
-                System.out.println(etudiants.get(1).getPrenom());
-                System.out.println(etudiants.get(2).getPrenom());
-
-
-            }catch (NullPointerException  e){
-//            MANAGE ERROR HERE
-                System.err.println(e.getMessage());
-
-            }    }
-
+    public static void testException() {
+        try {
+            Etudiant etudiant = new Etudiant("Diallo", "Alimatou", 'M', -5, 972, "ISI");
+            etudiant.sePresenter();
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }
