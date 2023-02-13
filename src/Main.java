@@ -1,10 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
-        Personne personne = new Personne("CAMARA", "Sidiki", 'M', 40);
-        personne.sePresenter();
-
-
-
-    }
+        Etudiant etudiant = new Etudiant("CAMARA", "Sidiki", 'M', 30, 5555, "MP-ISI");
+        etudiant.sePresenter();    }
 }
