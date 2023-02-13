@@ -1,0 +1,2 @@
+Application 6 – Déclencher une exception puis laisser propager l’exception.
+- Reprendre l’application précédente et laisser propager l’exception déclenché lorsque l’âge est invalide.
