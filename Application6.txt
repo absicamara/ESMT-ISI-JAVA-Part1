@@ -1,2 +1,8 @@
-Application 6 – Déclencher une exception puis laisser propager l’exception.
-- Reprendre l’application précédente et laisser propager l’exception déclenché lorsque l’âge est invalide.
+Application 7 – Créer vos propres classes d’exception.
+ Créer une classe User (login, password) disposant d’une méthode
+ Créer une classe User (login, password) disposant d’une méthode d’authentification qui déclenche une exception lorsque le login et le
+d’authentification qui déclenche une exception lorsque le login et le
+password ne sont pas renseignés. password ne sont pas renseignés.
+ Créer la classe d’exception NullAuthentificationDataException
+ Créer la classe d’exception NullAuthentificationDataException
+dérivant de la classe Exception à cet effet. dérivant de la classe Exception à cet effet.

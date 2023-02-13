@@ -56,19 +56,19 @@ public abstract class Personne {
 
     public void setAge(int age) throws Exception {
         if (age < 0) {
-            throw  new Exception("l'age doit être superieur à zero");
+            throw  new Exception("AGE must not be less than zero");
         }
         this.age = age;
     }
 
     public void sePresenter() {
         if (nom == null || prenom == null) {
-            throw  new RuntimeException("Neither name nor surname must should be null");
+            throw  new RuntimeException("Nom or prenom must must not be null");
         }
         if (nom.isEmpty() ||  prenom.isEmpty()) {
-            throw  new RuntimeException("Neither name nor surname should be empty");
+            throw  new RuntimeException("Nom or prenom must not be empty");
         }
-        System.out.println("Hello :) - moi c'est "+ prenom + " " + nom +", j'ai  "+age+ " ans et je suis de sexe "+sexe);
+        System.out.println("Je suis "+ prenom + " " + nom +", j'ai  "+age+ " ans et je suis de sexe "+sexe);
     }
 
     public static int getNbPersonnes(){

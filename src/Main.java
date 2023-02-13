@@ -1,25 +1,20 @@
-import entity.Etudiant;
+import exceptions.BadFormatAuthentificationDataException;
+import exceptions.NullAuthentificationDataException;
+import entity.User;
 
 public class Main {
 
     public static void main(String[] args) {
-        testException2();
-    }
+        User user = new User("", "admin1234");
 
-    public static void testException2() {
         try {
-            testException1();
-        } catch (Exception e) {
-
+            if (user.authenticateUser()) {
+                System.out.println("Hello Root !");
+            } else {
+                System.err.println("Authentication Failed !!");
+            }
+        } catch (NullAuthentificationDataException | BadFormatAuthentificationDataException e) {
             System.err.println(e.getMessage());
         }
-    }
-
-    public static void testException1() throws  Exception{
-
-            Etudiant etudiant = new Etudiant();
-            etudiant.setAge(-5);
-
-
     }
 }
