@@ -1,8 +1,1 @@
-Application 7 – Créer vos propres classes d’exception.
- Créer une classe User (login, password) disposant d’une méthode
- Créer une classe User (login, password) disposant d’une méthode d’authentification qui déclenche une exception lorsque le login et le
-d’authentification qui déclenche une exception lorsque le login et le
-password ne sont pas renseignés. password ne sont pas renseignés.
- Créer la classe d’exception NullAuthentificationDataException
- Créer la classe d’exception NullAuthentificationDataException
-dérivant de la classe Exception à cet effet. dérivant de la classe Exception à cet effet.
+Implémenter et tester la fabrique entity.PersonneFactory permettant d’instancier les différents types de personnes (responsable, formateur, étudiant)
