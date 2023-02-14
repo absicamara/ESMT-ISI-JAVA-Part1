@@ -1,0 +1,4 @@
+APPLICATION 13 - INTERAGIR AVEC L’UTILISATEUR
+1. Réaction de l’application aux changements dans la TableView (actions utilisateur)
+2. Ajout des fonctionnalités CRUD (Create, Read, Update, Delete)
+3. Ajout d’une fenêtre pour modifier un utilisateur sélectionné
