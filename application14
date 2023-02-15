@@ -1,0 +1,4 @@
+Application 14
+
+Implémenter le pattern DAO pour le POJO User et tester l’ensemble des opérations
+Ajouter un factory pour utiliser la serialisation ou une base de donnees selon le fichier de configuration
