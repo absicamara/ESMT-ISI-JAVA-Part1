@@ -1,0 +1,3 @@
+ SÉRIALISATION
+ TP – Créer la classe d’implémentation ObjectFileUserDaoImpl qui implémente l’interface IDAO<User>.
+ Utiliser cette classe pour tester les opérations précédentes.
